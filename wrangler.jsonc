@@ -9,6 +9,6 @@
   },
   "vars": {
     "proxy_url": "https://cf.haoss.eu.org", 
-    "token_prefix": "/"  // 空密码，访问直接去掉前缀
+    "token_prefix": "/oooo/"  // 自定义密码
   }
 }
