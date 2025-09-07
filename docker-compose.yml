@@ -2,10 +2,10 @@ services:
   siteproxy:
     image: node:22
     container_name: siteproxy-node
-    restart: unless-stopped
-    ports:
-      - 127.0.0.1:5006:5006
+    working_dir: /app
     volumes:
-      - ../:/home/node/siteproxy/
-    working_dir: /home/node/siteproxy/
-    entrypoint: ["node","/home/node/siteproxy/bundle.cjs"]
+      - ./:/app
+    command: bash -c "npm install && node index.js"
+    ports:
+      - "5006:5006"
+    restart: always
