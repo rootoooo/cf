@@ -8,4 +8,4 @@ RUN node --version
 COPY . /app
 WORKDIR /app
 
-CMD ["node", "bundle.mjs"]
+CMD ["node", "bundle.cjs"]
