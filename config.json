@@ -1,5 +1,5 @@
 {
-  "proxy_url": "https://ppx.haoss.eu.org",
+  "proxy_url": "https://cf.haoss.eu.org",
   "token_prefix": "/oooo/",
   "local_listen_port": 5006,
   "local_listen_ip": "0.0.0.0",
